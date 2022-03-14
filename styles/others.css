@@ -1,0 +1,48 @@
+.others_container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.others_container,
+.others_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.others_wrapper {
+    display: flex;
+    flex: 1;
+    margin: 1rem 0 2rem 0;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.others_wrapper,
+.others_card {
+    align-items: center;
+    justify-content: center;
+}
+
+.others_card {
+    width: 20%;
+    padding: 1rem;
+
+    transition: all 0.8s ease;
+}
+
+.others_card img {
+    width: 70%;
+    min-width: 200px;
+    margin-bottom: 1rem;
+}
+
+.others_card:hover {
+    width: 22%;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 800px) {
+    .others_wrapper {
+        flex-direction: column;
+    }
+}

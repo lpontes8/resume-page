@@ -1,0 +1,92 @@
+.intro_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.intro_wrapperLeft {
+    min-height: calc(100vh - 53.6px);
+}
+
+.intro_container span {
+    font-size: 3rem;
+}
+
+.intro_wrapperLeft,
+.intro_carousel ul,
+.intro_wrapperRight {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    animation: fadeIn 2s ease;
+}
+
+.intro_carousel {
+    color: #055693;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.intro_carousel ul {
+    font-size: 30px;
+    animation: carouselList 8s linear infinite alternate;
+}
+
+.intro_wrapperRight {
+    min-height: 30vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../assets/images/pexels-lukas-574069.jpg');
+    background-size: cover;
+    background-position: center center;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes carouselList {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    75% {
+        transform: translateY(-90px);
+    }
+
+    100% {
+        transform: translateY(-120px);
+    }
+}
+
+@media (max-width: 800px) {
+    .intro_container {
+        flex-direction: column;
+    }
+
+    .intro_wrapperRight {
+        clip-path: none;
+    }
+}

@@ -1,0 +1,51 @@
+.fundamentals_container {
+    width: 100%;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.fundamentals_container,
+.fundamentals_container h3,
+.fundamentals_card img,
+.fundamentals_card p {
+    margin-bottom: 1rem;
+}
+
+.fundamentals_wrapper,
+.fundamentals_card {
+    display: flex;
+    flex: 1;
+}
+
+.fundamentals_wrapper {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fundamentals_card {
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    min-width: 200px;
+    transition: all 0.5s;
+
+}
+
+.fundamentals_card img {
+    margin-top: 1rem;
+}
+
+.fundamentals_card:hover {
+    border-bottom: 4px solid black;
+}
+
+.fundamentals_card img {
+    width: 40%;
+}

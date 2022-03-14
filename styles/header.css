@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #055693;
+  overflow: hidden;
+  height: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .menuIcon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a.menuIcon {
+    float: right;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.menuIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

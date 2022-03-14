@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucas Pontes personal resume">
+    <meta name="author" content="Lucas Pontes" />
+    <meta name="copyright" content="© 2022 Lucas Pontes" />
+    <meta name="keywords" content="html, css, javascript, react">
+
+    <title>Lucas Pontes</title>
+
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/others.css" />
+    <link rel="stylesheet" href="./styles/react.css" />
+    <link rel="stylesheet" href="./styles/fundamentals.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/intro.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <a href="#">
+                <div class="logo" aria-hidden="true">
+                    <span class="sign">&lt;</span>
+                    <span>lpontes </span>
+                    <span class="sign"> &#8260; &#62;</span>
+                </div>
+            </a>
+            <a href="#about">About</a>
+            <a href="#fundamentals">Fundamentals</a>
+            <a href="#react">React</a>
+            <a href="#others">Others</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" onclick="handleMenu()" class="menuIcon" aria-hidden="true">
+                <img src="./assets/images/menu.svg" alt="Drop Menu Icon" />
+            </a>
+        </div>
+    </header>
+    <main>
+
+        <section class="intro_container">
+            <div class="intro_wrapperLeft">
+                <span>Hello, I am</span>
+                <h1>Lucas Pontes</h1>
+                <div class="intro_carousel">
+                    <ul>
+                        <li>IT Student</li>
+                        <li>Programmer</li>
+                        <li>Web Developer</li>
+                        <li>Front-end Dev</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro_wrapperRight">
+            </div>
+        </section>
+
+        <section class="about_container" id="about">
+            <h2>About</h2>
+            <div class="about_wrapper">
+                <div class="about_leftContent">
+                    <p>
+                        I am a Systems Analysis and Development student with interest in <b>Frond-End</b> technologies
+                        and focus on the <b>React JS</b> Library for User Interface development.
+                        Looking for an internship opportunity to start in the IT job market. I also have knowledge in
+                        other areas such as <b>Linux</b> and <b>SQL</b>.
+                    </p>
+                </div>
+                <div class="about_rightContent">
+                    <img src="./assets/images/pexels-sora-shimazaki-5668517.jpg" alt="Lucas' photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="fundamentals_container" id="fundamentals">
+            <h2>Fundamentals</h2>
+            <div class="fundamentals_wrapper">
+                <div class="fundamentals_card">
+                    <img src="./assets/images/html5.svg" alt="html5 logo">
+                    <h3>HTML</h3>
+                    <p>Organized and accessible content.</p>
+                </div>
+                <div class="fundamentals_card">
+                    <img src="./assets/images/css3.svg" alt="css3 logo">
+                    <h3>CSS</h3>
+                    <p>Consistent and responsive design, generating value from the first impression.</p>
+                </div>
+                <div class="fundamentals_card">
+                    <img src="./assets/images/javascript.svg" alt="javascript logo">
+                    <h3>JavaScript</h3>
+                    <p>More interaction, better experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="react_container" id="react">
+            <h2>React</h2>
+            <p>Interactive applications for mobile and web.</p>
+            <div class="react_wrapper">
+                <div class="react_leftContent">
+                    <div class="react_card">
+                        <img src="./assets/images/react.svg" alt="A rotating react logo animation">
+                        <h3>React</h3>
+                        <p>Create interactive and efficient UI using the main React Hooks:</p>
+                        <ul>
+                            <li>State</li>
+                            <li>Effect</li>
+                            <li>Reducer</li>
+                            <li>Callback</li>
+                            <li>Memo</li>
+                        </ul>
+                        <p>Fluid navigation using React Router.</p>
+                    </div>
+                </div>
+                <div class="react_rightContent">
+                    <div class="react_card">
+                        <img src="./assets/images/redux.svg" alt="redux icon">
+                        <h3>Redux</h3>
+                        <p>Easily share states across multiple components.</p>
+                    </div>
+                    <div class="react_card">
+                        <img src="./assets/images/next.svg" alt="Next framework logo">
+                        <h3>Next.js</h3>
+                        <p>Framework for simple and fast react app production.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="others_container" id="others">
+            <h2>Other tools</h2>
+            <div class="others_wrapper">
+                <div class="others_card">
+                    <img src="./assets/images/linux.svg" alt="Linux logo">
+                    <h3>Linux</h3>
+                </div>
+                <div class="others_card">
+                    <img src="./assets/images/git.svg" alt="Git logo">
+                    <h3>Git</h3>
+                </div>
+                <div class="others_card">
+                    <img src="./assets/images/mysql.svg" alt="MySQL logo">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="others_card">
+                    <img src="./assets/images/bootstrap.svg" alt="Bootstrap logo">
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_container" id="contact">
+            <h2>Contact me</h2>
+            <div class="contact_wrapper">
+                <div class="contact_leftContent">
+                    <div class="contactWrapper">
+                        <img src="./assets/images/home.svg" alt="Address Icon">
+                        <span>99 Marcílio Martins st, Pq João Maria. Campos dos Goytacazes, RJ.</span>
+                    </div>
+                    <div class="contactWrapper">
+                        <img src="./assets/images/phone.svg" alt="Phone Icon">
+                        <span>+55 22 98847 1737</span>
+                    </div>
+                    <div class="contactWrapper" id="emailWrapper">
+                        <img src="./assets/images/mail.svg" alt="Email Icon">
+                        <span>lucasdealmeidapontes@gmail.com</span>
+                    </div>
+                    <div class="contactWrapper">
+                        <a href="https://www.linkedin.com/in/lucasapontes/">
+                            <img src="./assets/images/linkedin.svg" alt="Linkedin Icon">
+                            lucasapontes
+                        </a>
+                    </div>
+                    <div class="contactWrapper">
+                        <a href="https://github.com/lpontes8">
+                            <img src="./assets/images/github.svg" alt="Github Icon">
+                            lpontes8
+                        </a>
+                    </div>
+                </div>
+                <div class="contact_rightContent">
+                    <img src="assets/images/pexels-sora-shimazaki-5668517.jpg" alt="Handshake between two people" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="logo" aria-hidden="true">
+            <span class="sign">&lt;</span>
+            <span>lpontes </span>
+            <span class="sign"> &#8260; &#62;</span>
+        </div>
+        <span>
+            Copyright © 2022 programmer Lucas Pontes. All Rights Reserved.
+        </span>
+    </footer>
+    <script src="./scripts/toggleMenu.js"></script>
+</body>
+
+</html>
